@@ -22,8 +22,8 @@ Scenario: Send money between two registered users
 Scenario: Send money from unregistered user
 	Given user with phone number 92748326 is not registered
 	When user sends SMS
-	| Phone number | Message |
-	| 92748326 | PAY 10 95473893 |
+	| Phone number | Message         |
+	| 92748326     | PAY 10 95473893 |
 	Then following SMS should be sent
 	| Phone number | Message |
 	| 92748326 | In order to use InMemory Bank you need to register. Command is cancelled. |

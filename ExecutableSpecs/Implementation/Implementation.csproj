@@ -12,6 +12,7 @@
     <AssemblyName>Implementation</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,7 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="ApplicationQueue.cs" />
+    <Compile Include="Bank\CommandProcessor.cs" />
+    <Compile Include="Bank\NotificationTopic.cs" />
+    <Compile Include="Bank\Payment.cs" />
+    <Compile Include="Bank\PaymentCommand.cs" />
+    <Compile Include="Bank\PaymentException.cs" />
+    <Compile Include="Bank\PaymentFee.cs" />
+    <Compile Include="Bank\PaymentNotification.cs" />
+    <Compile Include="Bank\PaymentType.cs" />
+    <Compile Include="Bank\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="Sms\SmsGateway.cs" />
+    <Compile Include="Sms\SmsMessage.cs" />
+    <Compile Include="Sms\SmsParser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
