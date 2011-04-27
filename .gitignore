@@ -1,1 +1,33 @@
-.idea/
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.suo
+*.bak
+*.[Cc]ache
+*.log
+obj/
+*/obj/*
+bin/
+*/bin/*
+[Dd]ebug*/
+[Rr]elease*/
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+#Project files
+[Bb]uild/
+
+# Office Temp Files
+~$*
